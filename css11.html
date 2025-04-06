@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .container{
+            display: flex;
+            width: 900px;
+            border: 1px solid black;
+        }
+        .flex-box{
+            display: flex;
+        }
+        .profile{
+            display: flex;
+        }
+        .profile-img{
+            border-radius: 50%;
+        }
+        .image{
+            width: 50px;
+        }
+        .time{
+            display: block;
+        }
+        .title1{
+            margin-top: 5px;
+        }
+        .profile-name{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .time{
+            font-size: 12px;
+        }
+        .profile-detail{
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-box">
+            <div class="left-box">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="/amongus.png" class="image">
+                    </div>
+                    <div class="profile-detail">
+                        <div class="profile-name">AmongUs</div>
+                        <div class="time">1시간 전</div>
+                    </div>
+                </div>
+                <div class="title">
+                    <h3 class="title1">메밀꽃 필 무렵</h3>
+                </div>
+                <div class="content">
+                    <p>이효석 작가의 단편소설로 1936년 10월[1] 잡지 <조광>에 "모밀꽃 필 무렵"이라는
+                    이름으로 수록되었지만, 이후 표준어가 정립되고나서 "메밀꽃 필 무렵"으로 정착되었다.</p>
+                </div>
+            </div>
+            <div class="right-box">
+                <img src="img/image.png" width="300px">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

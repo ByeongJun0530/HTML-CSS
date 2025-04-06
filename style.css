@@ -8,7 +8,7 @@
 /*<link rel="stylesheet" href=""./style.css>*/
 p{
     /* 모든 p 태그에 적용할 스타일 (tag 셀렉터) */
-    color: red;
+    text-decoration: underline; /* 밑줄 */
 }
 .blue-color{
     /* 해당 클래스 이름을 가진 모든 태그에 적용할 스타일 (class 셀렉터) */

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그라데이션</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin-top: 30px;
+        }
+        .linear{
+            background: linear-gradient(red, orange, yellow, blue);
+            background: linear-gradient(to right,red 20%, blue 50%, black);
+            background: linear-gradient(to top left, yellow, green, blue);
+            background: linear-gradient(red 35%, orange 35%, orange 75%, yellow 70%);
+        }
+        .radial{
+            background: radial-gradient(red, orange, yellow, green);
+        }
+        .blackhole{
+            /* 우주 이미지를 배경으로 깔고 중앙에 원형 그라데이션을 줘서 블랙홀을 만든다. */
+            /* background-image: url(/img/north-4756774_1280.jpg); */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+
+            /* 그라데이션을 중앙 검정, 하양, 투명 순서로 */
+            background: radial-gradient(black 40%, white 41%, transparent 49%), url(/img/north-4756774_1280.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box linear"></div>
+    <div class="box radial"></div>
+    <div class="box blackhole"></div>
+</body>
+</html>
