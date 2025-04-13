@@ -3,18 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootdey</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            box-sizing: border-box;
+            font-family: "SBAggroB";
+        }
+        body{
+            height: 100vh;
+            background-color: rgb(46, 149, 175);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+        }
+        .nav-right{
+            display: flex;
+        }
+        .nav-right > div{
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+        .nav-left{
+            margin-top: 20px;
+            font-size: 25px;
+        }
+        .main{
+            text-align: center;
+            color: white;
+        }
+        .title{
+            font-size: 50px;
+            margin-bottom: 25px;
+        }
+        .content{
+            font-size: 22px;
+        }
+        .btn{
+            text-shadow: 1px 1px yellowgreen;
+            margin-top: 25px;
+            background-color: rgb(201, 236, 72);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 17px;
+            padding: 11px 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="navbar">
-            <div class="nav-left"></div>
-            <div class="nav-right"></div>
+            <div class="nav-left">Bootdey.com</div>
+            <div class="nav-right">
+                <div>Home</div>
+                <div>About Us</div>
+                <div>Services</div>
+                <div>Portfolio</div>
+                <div>Contact</div>
+            </div>
         </div>
-        <div class="content">
-            <div>Bootstrap 4 Navbar</div>
-            <div></div>
-            <button class="btn"></button>
+        <div class="main">
+            <div class="title">Bootstrap 4 Navbar</div>
+            <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec elit ex.
+                Etiam elementum lectus et tempor <br/>molestie.
+            </div>
+            <button class="btn">Learn More</button>
         </div>
     </div>
 </body>
